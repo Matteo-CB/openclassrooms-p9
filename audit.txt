@@ -1,0 +1,70 @@
+Performances : 
+Rouge :
+
+Properly size images (Taille correcte des images) : Assurez-vous que les images sont dimensionnées correctement pour économiser les données cellulaires et améliorer le temps de chargement.
+Avoid serving legacy JavaScript to modern browsers (Évitez de servir du JavaScript obsolète aux navigateurs modernes) : Évitez de servir du code JavaScript obsolète aux navigateurs modernes qui ne le nécessitent pas, afin d'améliorer la compatibilité et les performances.
+Image elements do not have explicit width and height (Les éléments d'image n'ont pas de largeur et hauteur explicites) : Spécifiez explicitement la largeur et la hauteur des éléments d'image pour améliorer les performances de chargement et de rendu.
+Page prevented back/forward cache restoration (La page empêche la restauration de la mise en cache de l'historique de navigation) : La page a désactivé la fonctionnalité de restauration de l'historique de navigation, ce qui peut affecter la navigation fluide de l'utilisateur.
+Minimize main-thread work (Minimiser le travail sur le thread principal) : Réduisez la quantité de travail effectuée sur le thread principal lors du chargement et du rendu de la page pour améliorer la réactivité.
+Orange :
+
+Reduce unused CSS (Réduire le CSS inutilisé) : Supprimez le code CSS inutilisé pour réduire la taille des fichiers CSS.
+Minify JavaScript (Minifier le JavaScript) : Réduisez la taille du code JavaScript en le minifiant (suppression des espaces, des commentaires, etc.).
+Minify CSS (Minifier le CSS) : Réduisez la taille du code CSS en le minifiant.
+Reduce JavaScript execution time (Réduire le temps d'exécution du JavaScript) : Optimisez le code JavaScript pour améliorer son temps d'exécution.
+Gris :
+
+Avoid chaining critical requests (Évitez les requêtes en cascade des ressources critiques) : Évitez les dépendances de ressources qui retardent le chargement des ressources critiques.
+User Timing marks and measures (Marques et mesures de chronométrage utilisateur) : Utilisez l'API User Timing pour mesurer les performances de votre application.
+Keep request counts low and transfer sizes small (Maintenir un faible nombre de requêtes et de petites tailles de transfert) : Réduisez le nombre de requêtes HTTP et la taille des données transférées pour améliorer les performances.
+Largest Contentful Paint element (Élément avec le plus grand contenu visible) : Identifiez l'élément de contenu le plus important et assurez-vous qu'il se charge rapidement pour améliorer l'expérience utilisateur.
+Avoid large layout shifts (Évitez les changements de mise en page importants) : Évitez les mouvements inattendus des éléments de la page qui peuvent perturber l'expérience de l'utilisateur.
+Avoid long main-thread tasks (Évitez les tâches longues sur le thread principal) : Évitez les tâches qui prennent beaucoup de temps sur le thread principal, car elles peuvent ralentir le rendu de la page.
+
+Accessibilité :
+
+Rouge :
+
+Image elements do not have [alt] attributes (Les éléments d'image n'ont pas d'attribut [alt]) : Assurez-vous que tous les éléments d'image ont un attribut [alt] pour fournir une description textuelle de l'image.
+Form elements do not have associated labels (Les éléments de formulaire n'ont pas d'étiquettes associées) : Assurez-vous que chaque élément de formulaire est associé à une étiquette explicite pour faciliter la compréhension et l'utilisation par les utilisateurs de technologies d'assistance.
+Document doesn't have a <title> element (Le document n'a pas d'élément <title>) : Ajoutez un élément <title> dans le document pour fournir un titre descriptif pour les utilisateurs et les technologies d'assistance.
+Links do not have a discernible name (Les liens n'ont pas de nom discernable) : Assurez-vous que chaque lien a un nom descriptif pour que les utilisateurs comprennent où le lien les mènera.
+Background and foreground colors do not have a sufficient contrast ratio (Les couleurs d'arrière-plan et de premier plan n'ont pas un ratio de contraste suffisant) : Assurez-vous que les couleurs utilisées sur la page ont un contraste suffisant pour une lecture facile.
+<html> element does not have a [lang] attribute (L'élément <html> n'a pas d'attribut [lang]) : Ajoutez un attribut [lang] à l'élément <html> pour spécifier la langue principale de la page.
+Heading elements are not in a sequentially-descending order (Les éléments d'en-tête ne sont pas dans un ordre de descente séquentielle) : Assurez-vous que les éléments d'en-tête (h1, h2, h3, etc.) sont utilisés dans un ordre hiérarchique correct.
+Gris :
+
+The page has a logical tab order (La page a un ordre logique des onglets) : Assurez-vous que l'ordre des éléments pouvant être mis en évidence par tabulation est logique et prévisible pour faciliter la navigation au clavier.
+Interactive controls are keyboard focusable (Les contrôles interactifs sont accessibles via le clavier) : Assurez-vous que tous les éléments interactifs (boutons, liens, etc.) peuvent être mis en évidence par tabulation et utilisés avec le clavier.
+Interactive elements indicate their purpose and state (Les éléments interactifs indiquent leur objectif et leur état) : Assurez-vous que les éléments interactifs ont des indications claires de leur objectif et de leur état pour les utilisateurs de technologies d'assistance.
+The user's focus is directed to new content added to the page (La mise au point de l'utilisateur est dirigée vers les nouveaux contenus ajoutés à la page) : Assurez-vous que l'attention de l'utilisateur est dirigée vers les nouveaux contenus dynamiques ajoutés à la page.
+User focus is not accidentally trapped in a region (La mise au point de l'utilisateur n'est pas accidentellement piégée dans une région) : Assurez-vous que la mise au point de l'utilisateur ne reste pas piégée dans une région spécifique de la page.
+Custom controls have associated labels (Les contrôles personnalisés ont des étiquettes associées) : Assurez-vous que les contrôles personnalisés ont des étiquettes explicites pour faciliter leur compréhension et leur utilisation.
+Custom controls have ARIA roles (Les contrôles personnalisés ont des rôles ARIA) : Assurez-vous que les contrôles personnalisés utilisent les rôles ARIA appropriés pour améliorer l'accessibilité.
+Visual order on the page follows DOM order (L'ordre visuel sur la page suit l'ordre du DOM) : Assurez-vous que l'ordre d'affichage visuel des éléments correspond à l'ordre dans lequel ils apparaissent dans le DOM.
+Offscreen content is hidden from assistive technology (Le contenu hors écran est masqué pour la technologie d'assistance) : Assurez-vous que le contenu qui n'est pas visible à l'écran est masqué pour les technologies d'assistance.
+HTML5 landmark elements are used to improve navigation (Les éléments HTML5 de balisage sont utilisLes éléments HTML5 de balisage sont utilisés pour améliorer la navigation) : Utilisez les éléments de balisage HTML5 tels que <header>, <nav>, <main>, <footer>, etc., pour structurer correctement la page et améliorer la navigation pour les utilisateurs de technologies d'assistance.
+Référencement (SEO) :
+
+Rouge :
+
+Document doesn't have a <title> element (Le document n'a pas d'élément <title>) : Ajoutez un élément <title> dans le document pour fournir un titre descriptif qui aidera les moteurs de recherche à comprendre le contenu de la page.
+Document does not have a meta description (Le document n'a pas de méta-description) : Ajoutez une balise meta description pour fournir une description concise et pertinente de la page pour les moteurs de recherche.
+Image elements do not have [alt] attributes (Les éléments d'image n'ont pas d'attribut [alt]) : Ajoutez des attributs [alt] aux éléments d'image pour fournir des descriptions alternatives qui aident les moteurs de recherche à comprendre le contenu de l'image.
+Gris :
+
+Structured data is valid (Les données structurées sont valides) : Assurez-vous que les données structurées sur la page sont correctement formatées et valides pour améliorer la compréhension du contenu par les moteurs de recherche.
+Applications Web Progressives (PWA) :
+
+Rouge :
+
+Web app manifest or service worker do not meet the installability requirements (Le manifeste de l'application web ou le service worker ne répond pas aux exigences d'installabilité) : Assurez-vous que le manifeste de l'application web et le service worker respectent les exigences pour permettre une installation fiable de l'application.
+Does not register a service worker that controls page and start_url (N'enregistre pas de service worker qui contrôle la page et start_url) : Enregistrez un service worker pour contrôler la page et la start_url de l'application web.
+Is not configured for a custom splash screen (N'est pas configuré pour un écran de démarrage personnalisé) : Configurez un écran de démarrage personnalisé pour améliorer l'expérience utilisateur lors du chargement de l'application.
+Does not set a theme color for the address bar (Ne définit pas de couleur de thème pour la barre d'adresse) : Définissez une couleur de thème pour la barre d'adresse de l'application pour une apparence cohérente.
+Manifest doesn't have a maskable icon (Le manifeste n'a pas d'icône masquable) : Ajoutez une icône masquable dans le manifeste de l'application pour une meilleure expérience utilisateur lorsqu'elle est installée sur le périphérique.
+Gris :
+
+Site works cross-browser (Le site fonctionne sur plusieurs navigateurs) : Assurez-vous que le site web fonctionne correctement sur différents navigateurs.
+Page transitions don't feel like they block on the network (Les transitions de page ne donnent pas l'impression d'être bloquées par le réseau) : Assurez-vous que les transitions de page sont fluides et ne semblent pas bloquées par des problèmes de réseau.
+Each page has a URL (Chaque page a une URL) : Assurez-vous que chaque page de l'application a une URL unique pour une navigation et une indexation appropriées.
